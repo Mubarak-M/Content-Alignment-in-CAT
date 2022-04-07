@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/870235/1c68342ca0f546e7afd92ca9298ed7e5
+bundleId: https://api.rpubs.com/api/v1/document/870235/1c68342ca0f546e7afd92ca9298ed7e5
+url: http://rpubs.com/Mubarak/870235
+when: 1645726724.35703
+lastSyncTime: 1645726724.35703

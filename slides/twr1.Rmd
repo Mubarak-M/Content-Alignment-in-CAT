@@ -1,0 +1,216 @@
+---
+title: "Evaluating Content Alignment in Computerized Adaptive Testing"
+author: "Wise, S. L., et al. (2015)"
+date: "April 6 2022"
+
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css 
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    includes:
+      in_header: header.html
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(xaringanthemer)
+# extra_css <- list(
+#   ".red"   = list(color = "red"),
+#   ".small" = list("font-size" = "70%"),
+#   ".big" = list("font-size" = "120%"),
+#   ".full-width" = list(
+#     display = "flex",
+#     width   = "100%",
+#     flex    = "1 1 auto"
+#   )
+# )
+
+style_mono_light(
+  base_color = "#126c78",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+```
+
+class: center, middle
+# 
+## Goal
+
+.center[**Highlight  the decisions made in the development of CATs that influence and might threaten content
+alignment. It outlines a process for evaluating alignment that is sensitive to these threats and gives
+an empirical example of the process. **] 
+---
+
+
+# Introduction
+
+### Content Based Scoring
+
+
+Content-based scoring refers to the type of scoring that evaluates the content of the responses, as opposed to the writing quality (e.g., essay).
+
+
+### Concept Based Scoring
+
+
+concept-based scoring involve the scoring of individual concepts of a constructed response. 
+
+--
+ .center[**Analytical Scoring!**]
+
+---
+
+# Why Automate Scoring of Constructed Response?
+
+- Reduce the number of human scorers.
+
+- Save on costs for training human scorers.
+
+- Reduce the interval between test administration and score assignment.
+
+- Improve the scoring consistency .
+
+---
+
+# Method
+
+#### Item Selection
+
+- Four constructed response science items
+
+  - **1** Stand alone  
+  (Photosynthesis)
+  
+  - **3** Follow-up to preceding multiple choice item   
+  (Thermodynamics and Global Climate Change)
+
+--
+
+#### Holistic Scoring
+1. Off task
+
+2. No Link
+
+3. Partial Link
+
+4. Full Link
+
+5. Complex Link
+
+---
+# Method
+
+#### Analytical Scoring
+
+- Six concept (**C1 - C6**)
+
+--
+
+##### Scoring Rule
+
+**4** points C1 and (C2 or C3 or C4)  
+
+**3** points {C1 and (C2 or C3 or C4)} and C5  
+
+**3** points (C1 or C2 or C3)  
+
+**2** points (C1 or C2 or C3) and C5  
+
+**2** points C4  
+
+**1** point C4 and C5  
+
+**1** point C5 or C6 or none 
+
+---
+
+# Method
+
+#### Human Raters  
+$75\%$ of available responses were scored by humans
+
+  - Postdoctoral Researchers
+
+  - Research Scientist
+
+  - Advanced Graduate Students
+
+---
+
+# Method
+
+#### Automated Scoring Tool (*c-Rater*)
+
+.center[Evaluation Criteria ]
+
+| Quadratic Kappa | Correlation | Degradation | Standardized Mean Difference |
+| :---        |    :----   |          :--- | :---|
+|   Quadratic-weighted kappa coefficient indicates the proportion of agreement among multiple raters|Evaluate the consistency between human and machine scores|Examines the difference between human/machine score agreement and human/human score agreement|Mean difference between human and machine scores divided by the pooled standard deviations|
+| Poor (≤.00), slight (.00–.20), fair (.21–.40), moderate (.41–.60), good (.61–.80), and very good (.81–1). **Landis and Koch (1977)**   |  None (0–.09), small (.10–.30), moderate (.31–.50), and large (.51–1.00). **Cohen (1968)**         |  should not be greater than .10 in either kappa or Pearson correlation. **(Williamson et al., 2012)**   |   The standardized mean score difference should not be greater than .15 **(Williamson et al., 2012)**|
+
+
+---
+
+
+
+# Results
+
+
+
+.center[![](https://github.com/Mubarak-M/Auto-Scoring-Paper-Presentation/raw/main/slides/fig/Result%201.PNG?raw=TRUE)]
+
+---
+
+# Results
+
+.center[![](https://github.com/Mubarak-M/Auto-Scoring-Paper-Presentation/blob/main/slides/fig/Result%202.PNG?raw=TRUE)]
+
+---
+
+# Results
+
+.center[![](https://github.com/Mubarak-M/Auto-Scoring-Paper-Presentation/blob/main/slides/fig/Result%203.PNG?raw=TRUE)]
+
+---
+
+# Conlusion
+
+### Prospect
+
+- Has potential in scoring explanation items with complex scoring rubrics
+
+- May add value to human scoring of constructed responses for diagnosis and guidance
+
+- Will allow provision of elaborated specific feedback when scoring constructed
+response in large classes
+---
+
+# Conclusion
+
+### Obstacles
+
+- Difficulty in identifying underlying concepts and capture places where student's 
+argument were incomplete or inaccurate
+
+- Difficulty in capturing some unexpected vocabularies
+
+- Distinguishing between nonnormative, incorrect ideas from normative, correct scientific
+ideas
+
+--
+- Pronoun resolution is more difficult for c-rater
+
+- Requires large training data set
+
+---
+
+
+
+# Thank You
+
+.center[![](https://media.giphy.com/media/QyJ0We4GHpjBa7PvKL/giphy.gif)]
