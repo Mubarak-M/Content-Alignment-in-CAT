@@ -1,3 +1,2 @@
-# Automated Scoring
-This is a class presentation on Automated Scoring of Constructed -Response Science
-Items: Prospects and Obstacles.Liu, O. L., et al. (2014)
+# Content Alignment in CAT 
+This is a class presentation on Evaluating Content Alignment in Computerized Adaptive Testing: Wise, S. L., et al. (2015).
